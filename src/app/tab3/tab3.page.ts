@@ -9,4 +9,8 @@ export class Tab3Page {
 
   constructor() {}
 
+  inputFile = document.querySelector('#picture__input');
+
+  pictureImage = document.querySelector('.picture__image');
+
 }

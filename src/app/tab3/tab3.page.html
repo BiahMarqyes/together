@@ -1,17 +1,35 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 3
+      Perfil
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  <label class="picture" for="picture__input" tabindex="0">
+    <span class="picture__image"></span>
+  </label>
+  <input type="file" accept="image/*" id="picture__input"/>
+
+
+
+  <p>Dados Pesssoais</p>
+  <ion-card class="dados">
+    <ion-list>
+    <ion-item>
+      <ion-input label="CPF:"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input label="Data de nascimento:"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input label="Filhos(as):"></ion-input>
+    </ion-item>
+  </ion-list>
+  </ion-card>
+
 </ion-content>
